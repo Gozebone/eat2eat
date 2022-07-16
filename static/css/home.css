@@ -3,6 +3,10 @@
     overflow-x: auto;
 }
 
+body {
+    background-color: coral;
+}
+
 .scrollable-item {
     display: inline-block;
     float: none;
