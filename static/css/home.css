@@ -1,7 +1,7 @@
 div.scrollable {
     overflow: auto;
     white-space: nowrap;
-    display: block;
+    display: -webkit-box;
 }
 
 div.scrollable a {
