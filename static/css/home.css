@@ -1,12 +1,11 @@
 div.scrollable {
     overflow: auto;
     white-space: nowrap;
-    display: -webkit-box;
+    flex-direction: row;
 }
 
+
 div.scrollable a {
-    display: inline-block;
     text-align: center;
-    text-decoration: none;
     margin-right: 20px;
 }
