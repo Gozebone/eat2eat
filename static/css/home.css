@@ -1,0 +1,9 @@
+.scrollable {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.scrollable-item {
+    display: inline-block;
+    float: none;
+}

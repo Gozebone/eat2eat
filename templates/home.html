@@ -1,17 +1,24 @@
 {%  extends "base.html" %}
 
+
+{% block custom-head %}
+    {% load static %}
+    <link href="{% static 'home.css' %}" rel="stylesheet" type="text/css">
+{% endblock custom-head %}
+
+
 {% block main-content %}
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Салаты</a>
-            <a class="nav-item nav-link" href="#">Горячее</a>
-            <a class="nav-item nav-link" href="#">Гарниры</a>
-            <a class="nav-item nav-link" href="#">Супы</a>
-            <a class="nav-item nav-link" href="#">Пирожки сытные</a>
-            <a class="nav-item nav-link" href="#">Пирожки сладкие</a>
-            <a class="nav-item nav-link" href="#">Блины</a>
-            <a class="nav-item nav-link" href="#">Напитки</a>
+        <div class="navbar-nav scrollable">
+            <a class="nav-item nav-link scrollable-item" href="#">Салаты</a>
+            <a class="nav-item nav-link scrollable-item" href="#">Горячее</a>
+            <a class="nav-item nav-link scrollable-item" href="#">Гарниры</a>
+            <a class="nav-item nav-link scrollable-item" href="#">Супы</a>
+            <a class="nav-item nav-link scrollable-item" href="#">Пирожки сытные</a>
+            <a class="nav-item nav-link scrollable-item" href="#">Пирожки сладкие</a>
+            <a class="nav-item nav-link scrollable-item" href="#">Блины</a>
+            <a class="nav-item nav-link scrollable-item" href="#">Напитки</a>
         </div>
     </div>
 </nav>
