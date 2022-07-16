@@ -4,7 +4,7 @@ div.scrollable {
 }
 
 div.scrollable a {
-  display: inline-block;
+  float: left;
   text-align: center;
   text-decoration: none;
 }
