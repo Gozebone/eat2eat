@@ -23,7 +23,10 @@
             </div>
         </div>
     </nav>
-    {{ products.0.title }}
+
+    <script type="text/javascript">
+        const products = {{ products }}
+    </script>
 
     <div id="menu"></div>
 {% endblock main_content %}
