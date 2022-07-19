@@ -1,14 +1,17 @@
-.container-fluid {
+.scrollable {
     overflow: auto;
     white-space: nowrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 div.scrollable a {
     text-align: center;
     margin-right: 20px;
+}
+
+.container-fluid {
+    align-items: center;
+    justify-content: center;
 }
 
 .product {
