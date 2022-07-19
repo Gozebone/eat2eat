@@ -8,6 +8,7 @@ class LikeButton extends React.Component {
 
   render() {
     if (this.state.liked) {
+      console.log(products);
       return products;
     }
 
