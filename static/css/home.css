@@ -9,8 +9,7 @@ div.scrollable a {
     margin-right: 20px;
 }
 
-.container-fluid {
-    align-items: center;
+.navbar>.container-fluid {
     justify-content: center;
 }
 
