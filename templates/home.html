@@ -30,5 +30,6 @@
 
 
 {% block react_scripts %}
-    <script src="products_display.js"></script>
+    {% load static %}
+    <script src={% static "js/products_display.js" %}></script>
 {% endblock react_scripts %}
