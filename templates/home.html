@@ -25,10 +25,9 @@
     </nav>
 
     <script type="text/javascript">
-        var products = JSON.parse('{{ products|safe }}');
+        const products = JSON.parse('{{ products|safe }}');
     </script>
     <div id="menu"></div>
-   <p> {{ products }} </p>
 {% endblock main_content %}
 
 

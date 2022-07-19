@@ -12,11 +12,11 @@ class LikeButton extends React.Component {
       return products;
     }
 
-    return (
-      <button onClick={() => this.setState({ liked: true })}>
-        {products[0].fields.title}
-      </button>
-    );
+    return products.map((item, index) => (
+      <div className="product" key={index}>
+        {item.fields.title}
+      </div>
+    ));
   }
 }
 
