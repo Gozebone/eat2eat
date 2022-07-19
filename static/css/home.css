@@ -9,10 +9,6 @@ div.scrollable a {
     margin-right: 20px;
 }
 
-.menu-nav {
-    justify-content: center;
-}
-
 .product {
     display: flex;
     flex-flow: column wrap;
