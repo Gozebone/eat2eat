@@ -14,29 +14,26 @@ var LikeButton = function (_React$Component) {
   function LikeButton(props) {
     _classCallCheck(this, LikeButton);
 
-    var _this = _possibleConstructorReturn(this, (LikeButton.__proto__ || Object.getPrototypeOf(LikeButton)).call(this, props));
-
-    _this.state = { liked: false };
-    return _this;
+    return _possibleConstructorReturn(this, (LikeButton.__proto__ || Object.getPrototypeOf(LikeButton)).call(this, props));
   }
 
   _createClass(LikeButton, [{
-    key: 'render',
+    key: "render",
     value: function render() {
-      var _this2 = this;
-
-      if (this.state.liked) {
-        console.log(products);
-        return products;
-      }
-
-      return React.createElement(
-        'button',
-        { onClick: function onClick() {
-            return _this2.setState({ liked: true });
-          } },
-        products[0].fields.title
-      );
+      return products.map(function (item, index) {
+        return React.createElement(
+          "div",
+          { className: "product" },
+          React.createElement("img", { src: "/media/" + item.fields.img, alt: item.fields.title }),
+          React.createElement(
+            "p",
+            null,
+            item.fields.title
+          ),
+          item.fields.title,
+          item.fields.price
+        );
+      });
     }
   }]);
 

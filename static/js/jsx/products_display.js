@@ -7,9 +7,9 @@ class LikeButton extends React.Component {
 
   render() {
     return products.map((item, index) => (
-      <div class="product">
+      <div className="product">
         <img src={"/media/" + item.fields.img} alt={item.fields.title} />
-        <h4>{item.fields.title}</h4>
+        <p>{item.fields.title}</p>
         {item.fields.title}
         {item.fields.price}
 
