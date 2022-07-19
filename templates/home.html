@@ -25,11 +25,8 @@
     </nav>
 
     <script type="text/javascript">
-        var products = {
-            'title': '{{ products.0.title }}',
-        }
+        var products = {{ products|safe }};
     </script>
-    {{ products.0 }}
     <div id="menu"></div>
 {% endblock main_content %}
 
