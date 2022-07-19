@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import render
 from ..products.models import Product
 # Create your views here.
@@ -5,7 +6,7 @@ from ..products.models import Product
 
 def home_view(request, *args, **kwargs):
     context = {
-        'products': Product.objects.all(),
+        'products': json.dumps(Product.objects.all()),
     }
     return render(request, "home.html", context)
 
