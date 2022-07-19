@@ -6,7 +6,7 @@ from ..products.models import Product
 
 def home_view(request, *args, **kwargs):
     context = {
-        'products': json.dumps(Product.objects.all()[0]),
+        'products': json.dumps(list(Product.objects.all())),
     }
     return render(request, "home.html", context)
 
