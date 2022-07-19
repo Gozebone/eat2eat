@@ -4,6 +4,7 @@
 {% block custom_head %}
     {% load static %}
     <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
+    <title>Меню</title>
 {% endblock custom_head %}
 
 
@@ -23,4 +24,11 @@
         </div>
     </nav>
     {{ products.0.title }}
+
+    <div id="menu"></div>
 {% endblock main_content %}
+
+
+{% block react_scripts %}
+    <script src="products_display.js"></script>
+{% endblock react_scripts %}
