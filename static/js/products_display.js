@@ -26,6 +26,7 @@ var LikeButton = function (_React$Component) {
       var _this2 = this;
 
       if (this.state.liked) {
+        console.log(products);
         return products;
       }
 
@@ -34,7 +35,7 @@ var LikeButton = function (_React$Component) {
         { onClick: function onClick() {
             return _this2.setState({ liked: true });
           } },
-        products
+        products[0].fields.title
       );
     }
   }]);
