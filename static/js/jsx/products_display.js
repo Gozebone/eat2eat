@@ -7,13 +7,13 @@ class LikeButton extends React.Component {
 
   render() {
     return products.map((item, index) => (
-      <section className="product">
+      <div class="product">
         <img src={"/media/" + item.fields.img} alt={item.fields.title} />
         <h4>{item.fields.title}</h4>
         {item.fields.title}
         <span>{item.fields.price}</span>
 
-      </section>
+      </div>
     ));
   }
 }
