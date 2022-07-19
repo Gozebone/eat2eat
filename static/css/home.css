@@ -1,4 +1,4 @@
-div.scrollable {
+.container-fluid {
     overflow: auto;
     white-space: nowrap;
     flex-direction: row;
