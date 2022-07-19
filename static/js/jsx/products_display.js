@@ -15,6 +15,8 @@ class LikeButton extends React.Component {
     return products.map((item, index) => (
       <div className="product" key={index}>
         {item.fields.title}
+        {item.fields.price}
+        {item.fields.title}
       </div>
     ));
   }
