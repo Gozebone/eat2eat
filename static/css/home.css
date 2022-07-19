@@ -2,6 +2,8 @@ div.scrollable {
     overflow: auto;
     white-space: nowrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 div.scrollable a {
@@ -12,4 +14,11 @@ div.scrollable a {
 .product {
     display: flex;
     flex-flow: column wrap;
+}
+
+#menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
