@@ -11,4 +11,5 @@ div.scrollable a {
 
 .product {
     display: flex;
+    flex-flow: column wrap;
 }
