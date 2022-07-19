@@ -8,13 +8,13 @@ class LikeButton extends React.Component {
 
   render() {
     if (this.state.liked) {
-      console.log(products);
-      return products;
+      console.log(products.title);
+      return products.title;
     }
 
     return (
       <button onClick={() => this.setState({ liked: true })}>
-        {products}
+        {products.title}
       </button>
     );
   }
