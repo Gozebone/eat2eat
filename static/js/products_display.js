@@ -26,7 +26,7 @@ var LikeButton = function (_React$Component) {
       var _this2 = this;
 
       if (this.state.liked) {
-        return products.title;
+        return products;
       }
 
       return React.createElement(
