@@ -11,7 +11,7 @@ class LikeButton extends React.Component {
         <img src={"/media/" + item.fields.img} alt={item.fields.title} />
         <h4>{item.fields.title}</h4>
         {item.fields.title}
-        <span>{item.fields.price}</span>
+        {item.fields.price}
 
       </div>
     ));
