@@ -24,4 +24,4 @@ class MenuItem extends React.Component {
 
 const domContainer = document.querySelector('#menu');
 const root = ReactDOM.createRoot(domContainer);
-root.render(React.createElement(LikeButton));
+root.render(React.createElement(MenuItem));
