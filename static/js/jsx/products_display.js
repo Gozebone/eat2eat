@@ -1,6 +1,6 @@
 'use strict';
 
-class LikeButton extends React.Component {
+class MenuItem extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -13,7 +13,7 @@ class LikeButton extends React.Component {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
             molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
             numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum!
+            optio, eaque rerum
         </p>
         {item.fields.price}
 
@@ -23,4 +23,5 @@ class LikeButton extends React.Component {
 }
 
 const domContainer = document.querySelector('#menu');
-ReactDOM.render(<LikeButton />, domContainer);
+const root = ReactDOM.createRoot(domContainer);
+root.render(React.createElement(LikeButton));
