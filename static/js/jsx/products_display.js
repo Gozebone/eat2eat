@@ -2,7 +2,7 @@
 
 var products_separate = {}
 for (let el in products){
-    if (typeof products_separate[el.type] === 'undefined' || !Array.isArray(products_separate[el.type])){
+    if (typeof products_separate[el.type] === 'undefined'){
         products_separate[el.type] = [];
     }
      products_separate[el.type].push(el);
