@@ -2,10 +2,10 @@
 
 var products_separate = {}
 for (let el in products){
-    if (typeof products_separate[products[el].type] === 'undefined'){
-        products_separate[products[el].type] = [];
+    if (typeof products_separate[products[el].fields.type] === 'undefined'){
+        products_separate[products[el].fields.type] = [];
     }
-     products_separate[products[el].type].push(products[el]);
+     products_separate[products[el].fields.type].push(products[el]);
     console.log(products_separate)
     console.log(el)
 }
