@@ -2,11 +2,12 @@
 
 var products_separate = {}
 for (let el in products){
-    if (typeof products_separate[el.type] === 'undefined'){
-        products_separate[el.type] = [];
+    if (typeof products_separate[products[el].type] === 'undefined'){
+        products_separate[products[el].type] = [];
     }
-     products_separate[el.type].push(el);
+     products_separate[products[el].type].push(products[el]);
     console.log(products_separate)
+    console.log(el)
 }
 
 class MenuItem extends React.Component {
