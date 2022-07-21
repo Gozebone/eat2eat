@@ -1,7 +1,7 @@
 from django.db import models
 from imagekit.models import ProcessedImageField
 from imagekit.processors import ResizeToFill
-from choices import *
+from apps.products.choices import *
 
 # Create your models here.
 
