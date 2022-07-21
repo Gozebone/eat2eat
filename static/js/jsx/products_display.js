@@ -1,4 +1,7 @@
 'use strict';
+// for (let el in products){
+//     el.type
+// }
 
 class MenuItem extends React.Component {
   constructor(props) {
