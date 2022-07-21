@@ -13,3 +13,4 @@ class Product(models.Model):
                               format='JPEG',
                               options={'quality': 60})
     type = models.CharField(max_length=2, choices=TYPE_CHOICES)
+    composition = models.TextField(blank=True)
