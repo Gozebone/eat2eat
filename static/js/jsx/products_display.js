@@ -1,7 +1,9 @@
 'use strict';
-// for (let el in products){
-//     el.type
-// }
+
+var products_separate = {}
+for (let el in products){
+     products_separate[el.type].push(el);
+}
 
 class MenuItem extends React.Component {
   constructor(props) {
@@ -9,17 +11,12 @@ class MenuItem extends React.Component {
   }
 
   render() {
-    return products.map((item, index) => (
+    return products_separate[0].map((item, index) => (
       <div className="product" key={index}>
         <img src={"/media/" + item.fields.img} alt={item.fields.title} />
         <p>{item.fields.title}</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum
-        </p>
-        {item.fields.price}
-
+        <p>{item.fields.composition}</p>
+        <p>{item.fields.price}</p>
       </div>
     ));
   }
