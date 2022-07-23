@@ -15,8 +15,7 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        return products_labels.map((products_label) => {
-            <React.Fragment id={products_label}>
+        return <React.Fragment id={products_labels['SA']}>
             {
                 products_separate['SA'].map((item, index) => (
                     <React.Fragment className="product" key={index}>
@@ -28,7 +27,7 @@ class MenuItem extends React.Component {
                 ))
             }
             </React.Fragment>
-        });
+
     }
 }
 
