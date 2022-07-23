@@ -8,7 +8,7 @@ from ..products.choices import *
 def home_view(request, *args, **kwargs):
     context = {
         'products': serializers.serialize("json", Product.objects.all()),
-        'products_labels': TYPE_CHOICES,
+        'products_labels': serializers.serialize("json", TYPE_CHOICES),
     }
     return render(request, "home.html", context)
 
