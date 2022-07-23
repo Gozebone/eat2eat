@@ -15,18 +15,18 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        return <React.Fragment id={products_labels['SA']}>
+        return <div id={products_labels['SA']}>
             {
                 products_separate['SA'].map((item, index) => (
-                    <React.Fragment className="product" key={index}>
+                    <div className="product" key={index}>
                         <img src={"/media/" + item.fields.img} alt={item.fields.title}/>
                         <p>{item.fields.title}</p>
                         <p>{item.fields.composition}</p>
                         <p>{item.fields.price}</p>
-                    </React.Fragment>
+                    </div>
                 ))
             }
-            </React.Fragment>
+            </div>
 
     }
 }
