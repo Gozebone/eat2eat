@@ -6,7 +6,7 @@ for (let el in products){
         products_separate[products[el].fields.type] = [];
     }
      products_separate[products[el].fields.type].push(products[el]);
-    console.log(products_labels[el])
+    console.log(products_labels[0])
 }
 
 class MenuItem extends React.Component {
