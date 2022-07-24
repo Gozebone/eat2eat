@@ -15,7 +15,7 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        return Object.keys(products_labels).map((key) => {<div id={key}>
+        return Object.keys(products_labels).map((key) => (<div id={key}>
             <h2>{products_labels[key]}</h2>
             {
                 products_separate[key].map((item, index) => (
@@ -28,7 +28,7 @@ class MenuItem extends React.Component {
                 ))
             }
             </div>
-    })
+        ))
     }
 }
 
