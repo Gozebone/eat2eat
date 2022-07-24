@@ -15,18 +15,18 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        return Object.keys(products_labels).map((key) => (<div id={key} className="products">
+        return Object.keys(products_labels).map((key) => (<div id={key}>
             <h2>{products_labels[key]}</h2>
-            {
-                products_separate[key].map((item, index) => (
+            <div  className="products">
+                {products_separate[key].map((item, index) => (
                     <div className="product" key={index}>
                         <img src={"/media/" + item.fields.img} alt={item.fields.title}/>
                         <p>{item.fields.title}</p>
                         <p>{item.fields.composition}</p>
                         <p>{item.fields.price}</p>
                     </div>
-                ))
-            }
+                ))}
+            </div>
             </div>
         ))
     }
