@@ -15,7 +15,19 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        return <div id={products_labels['SA']}>
+        return [<div id={products_labels['SA']}>
+            {
+                products_separate['SA'].map((item, index) => (
+                    <div className="product" key={index}>
+                        <img src={"/media/" + item.fields.img} alt={item.fields.title}/>
+                        <p>{item.fields.title}</p>
+                        <p>{item.fields.composition}</p>
+                        <p>{item.fields.price}</p>
+                    </div>
+                ))
+            }
+            </div>,
+            <div id={products_labels['HO']}>
             {
                 products_separate['SA'].map((item, index) => (
                     <div className="product" key={index}>
@@ -27,7 +39,7 @@ class MenuItem extends React.Component {
                 ))
             }
             </div>
-
+        ]
     }
 }
 
