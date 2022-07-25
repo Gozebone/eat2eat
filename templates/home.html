@@ -12,14 +12,14 @@
     <nav class="navbar sticky-top navbar-light bg-light">
         <div class="container-fluid" style="justify-content: center;">
             <div class="navbar-nav scrollable">
-                <a class="nav-item nav-link" href="#">Салаты</a>
-                <a class="nav-item nav-link" href="#">Горячее</a>
-                <a class="nav-item nav-link" href="#">Гарниры</a>
-                <a class="nav-item nav-link" href="#">Супы</a>
-                <a class="nav-item nav-link" href="#">Пирожки сытные</a>
-                <a class="nav-item nav-link" href="#">Пирожки сладкие</a>
-                <a class="nav-item nav-link" href="#">Блины</a>
-                <a class="nav-item nav-link" href="#">Напитки</a>
+                <a class="nav-item nav-link" href="#SA">Салаты</a>
+                <a class="nav-item nav-link" href="#HO">Горячее</a>
+                <a class="nav-item nav-link" href="#GA">Гарниры</a>
+                <a class="nav-item nav-link" href="#SO">Супы</a>
+                <a class="nav-item nav-link" href="#PI">Пирожки сытные</a>
+                <a class="nav-item nav-link" href="#CA">Пирожки сладкие</a>
+                <a class="nav-item nav-link" href="#PA">Блины</a>
+                <a class="nav-item nav-link" href="#DR">Напитки</a>
             </div>
         </div>
     </nav>
@@ -28,7 +28,9 @@
         const products = JSON.parse(`{{ products|safe }}`);
         const products_labels = JSON.parse(`{{ products_labels|safe }}`);
     </script>
-    <main id="menu"></main>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+        <main id="menu"></main>
+    </div>
 {% endblock main_content %}
 
 
