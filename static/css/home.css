@@ -9,15 +9,13 @@ div.scrollable a {
     margin-right: 20px;
 }
 
-.product {
-    display: flex;
-    flex-flow: column wrap;
-    max-width: 300px;
+#menu {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#menu {
-    display: flex;
-    flex-flow: column wrap;
+.products_block {
+    margin-bottom: 5%;
 }
 
 .products {
@@ -25,6 +23,8 @@ div.scrollable a {
     flex-flow: row wrap;
 }
 
-.products_block {
-    margin-bottom: auto;
+.product {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 300px;
 }
