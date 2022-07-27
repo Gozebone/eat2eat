@@ -26,5 +26,6 @@ div.scrollable a {
 .product {
     display: flex;
     flex-flow: column wrap;
-    max-width: 300px;
+    column-gap: 20px;
+    max-width: 320px;
 }
