@@ -9,7 +9,7 @@ class Product(models.Model):
     title = models.CharField(max_length=30)
     price = models.DecimalField(decimal_places=2, max_digits=50)
     img = ProcessedImageField(upload_to='products/',
-                              processors=[ResizeToFill(1000,500)],
+                              processors=[ResizeToFill(300,150)],
                               format='JPEG',
                               options={'quality': 60})
     type = models.CharField(max_length=2, choices=TYPE_CHOICES)
