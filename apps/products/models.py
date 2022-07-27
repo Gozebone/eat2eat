@@ -11,7 +11,7 @@ class Product(models.Model):
     img = ProcessedImageField(upload_to='products/',
                               processors=[ResizeToFill(320,240)],
                               format='JPEG',
-                              options={'quality': 60})
+                              options={'quality': 100})
     type = models.CharField(max_length=2, choices=TYPE_CHOICES)
     composition = models.TextField(blank=True)
 
