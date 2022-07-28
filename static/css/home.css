@@ -28,5 +28,4 @@ div.scrollable a {
 .product {
     display: flex;
     flex-flow: column wrap;
-    max-width: 320px;
 }
