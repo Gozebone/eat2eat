@@ -32,4 +32,6 @@ div.scrollable a {
 
 .product > img {
     border-radius: 10%;
+    max-width: 100%;
+    width: 320px;
 }

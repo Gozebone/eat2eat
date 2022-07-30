@@ -14,12 +14,13 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        return Object.keys(products_labels).map((key) => (<div id={key} key={key} className="products_block">
+        return Object.keys(products_labels).map((key) => (
+            <div id={key} key={key} className="products_block">
             <h2>{products_labels[key]}</h2>
             <div  className="products">
                 {products_separate[key].map((item, index) => (
                     <div className="product" key={index}>
-                        <img src={"/media/" + item.fields.img} width="320" alt={item.fields.title}/>
+                        <img src={"/media/" + item.fields.img} alt={item.fields.title}/>
                         <p>{item.fields.title}</p>
                         <p>{item.fields.composition}</p>
                         <p>{item.fields.price}</p>
