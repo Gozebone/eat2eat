@@ -29,3 +29,7 @@ div.scrollable a {
     display: flex;
     flex-flow: column wrap;
 }
+
+.product > img {
+    border-radius: 10%;
+}
