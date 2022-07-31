@@ -13,3 +13,6 @@ def home_view(request, *args, **kwargs):
     }
     return render(request, "home.html", context)
 
+
+def contacts_view(request, *args, **kwargs):
+    return render(request, "contacts.html")
