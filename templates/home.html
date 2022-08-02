@@ -9,7 +9,7 @@
 
 
 {% block main_content %}
-    <nav class="navbar sticky-top navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-light bg-light" id="menuNav">
         <div class="container-fluid" style="justify-content: center;">
             <div class="navbar-nav scrollable">
                 <a class="nav-item nav-link" href="#SA">Салаты</a>
@@ -29,7 +29,7 @@
         const products_labels = JSON.parse(`{{ products_labels|safe }}`);
     </script>
 
-    <main id="menu"></main>
+    <main id="menu" data-spy="scroll" data-target="#menuNav"></main>
 {% endblock main_content %}
 
 
