@@ -18,8 +18,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="/">Меню</a>
-                    <a class="nav-item nav-link" href="/contacts/">Контакты</a>
+                    <a {% if request.resolver_match.url_name == 'home' %}
+                            class="nav-link active"
+                       {% else %}class="nav-link"{% endif %}
+                       aria-current="page" href="{% url 'home' %}">Меню</a>
+                    <a {% if request.resolver_match.url_name == 'contacts' %}
+                            class="nav-link active"
+                       {% else %}class="nav-link"{% endif %}
+                       aria-current="page" href="{% url 'contacts' %}">Контакты</a>
                 </div>
             </div>
         </div>
