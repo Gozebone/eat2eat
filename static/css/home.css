@@ -13,24 +13,27 @@ body{
     --bs-navbar-brand-color: var(--dark-cyan);
     --bs-navbar-hover-color: var(--coral);
     --bs-navbar-brand-hover-color: var(--coral);
-    --bs-navbar-active-color: var(--coral);
+    --bs-navbar-active-color: white;
 }
 
 .scrollable {
     overflow: auto;
     white-space: nowrap;
     flex-direction: row;
+}
+
+.navbar-expand-lg .navbar-collapse, .scrollable{
     column-gap: 20px;
 }
 
 .navbar-nav .nav-link.active {
-    color: white;
     background-color: var(--coral);
 }
 
-div.navbar-nav a {
+.navbar .navbar-nav .nav-link {
     text-align: center;
     border-radius: 2em;
+    padding: 0.3em;
     padding-inline: 1em;
     font-size: 1.2rem;
 }
