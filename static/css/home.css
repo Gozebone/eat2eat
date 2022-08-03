@@ -2,11 +2,18 @@
     overflow: auto;
     white-space: nowrap;
     flex-direction: row;
+    column-gap: 20px;
+}
+
+.navbar-nav.scrollable .nav-link.active {
+    color: white;
+    background-color: #fd7441;
 }
 
 div.scrollable a {
     text-align: center;
-    margin-right: 20px;
+    border-radius: 0.5em;
+    padding: 0.5em;
 }
 
 #menu {
