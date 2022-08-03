@@ -16,7 +16,7 @@ body{
     --bs-navbar-active-color: white;
 }
 
-.navbar-expand-lg .navbar-collapse{
+.navbar-expand-lg .navbar-nav{
     column-gap: 20px;
 }
 
