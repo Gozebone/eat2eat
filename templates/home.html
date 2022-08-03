@@ -3,6 +3,12 @@
 
 {% block custom_head %}
     {% load static %}
+    <style>
+        @font-face {
+            font-family: monologue;
+            src: url("{% static 'fonts/MonologueRounded.otf' %}") format("otf");
+        }
+    </style>
     <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
     <title>Меню</title>
 {% endblock custom_head %}
