@@ -47,7 +47,7 @@ div.scrollable a {
 
 @font-face {
             font-family: monologue;
-            src: url("/static/fonts/MonologueRounded.otf") format("otf");
+            src: url("/static/fonts/MonologueRounded.otf") format("opentype");
 }
 
 h2{
