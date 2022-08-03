@@ -21,7 +21,7 @@ class MenuItem extends React.Component {
                 {products_separate[key].map((item, index) => (
                     <div className="product" key={index}>
                         <img src={"/media/" + item.fields.img} alt={item.fields.title}/>
-                        <p>{item.fields.title}</p>
+                        <h2>{item.fields.title}</h2>
                         <p>{item.fields.composition}</p>
                         <p>{item.fields.price}</p>
                     </div>
