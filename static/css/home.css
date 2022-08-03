@@ -1,7 +1,13 @@
+:root{
+    --dark-cyan: #285252;
+    --coral: #fd7441;
+}
+
 .navbar {
-    --bs-navbar-color: #1C3939;
-    --bs-navbar-hover-color: #fd7441;
-    --bs-navbar-brand-color: #1C3939;
+    --bs-navbar-color: var(--dark-cyan);
+    --bs-navbar-hover-color: var(--coral);
+    --bs-navbar-brand-color: var(--dark-cyan);
+    --bs-navbar-active-color: var(--coral);
 }
 
 .scrollable {
@@ -13,7 +19,7 @@
 
 .navbar-nav.scrollable .nav-link.active {
     color: white;
-    background-color: #fd7441;
+    background-color: var(--coral);
 }
 
 div.scrollable a {
@@ -52,6 +58,7 @@ div.scrollable a {
 }
 
 h1{
+    font-size: 3rem;
     font-family: monologue;
-    color: #1C3939;
+    color: var(--dark-cyan);
 }
