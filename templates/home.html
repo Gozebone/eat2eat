@@ -5,8 +5,12 @@
     {% load static %}
     <style>
         @font-face {
-            font-family: monologue;
+            font-family: titles;
             src: url("{% static 'fonts/MonologueRounded.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: regular;
+            src: url("{% static 'fonts/UbuntuTitle.ttf' %}") format("truetype");
         }
     </style>
     <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">

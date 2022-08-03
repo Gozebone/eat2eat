@@ -59,6 +59,10 @@ div.scrollable a {
 
 h1{
     font-size: 3rem;
-    font-family: monologue;
+    font-family: title;
     color: var(--dark-cyan);
+}
+
+a p {
+    font-family: regular;
 }
