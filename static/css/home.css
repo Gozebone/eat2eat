@@ -59,13 +59,10 @@ div.navbar-nav a {
     width: 320px;
 }
 
-h1, h2{
-    font-family: title;
-    color: var(--dark-cyan);
-}
-
 h1{
     font-size: 3rem;
+    font-family: title;
+    color: var(--dark-cyan);
 }
 
 p{
