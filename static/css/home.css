@@ -3,6 +3,10 @@
     --coral: #fd7441;
 }
 
+body{
+    font-family: regular;
+    color: var(--dark-cyan);
+}
 .navbar {
     --bs-navbar-color: var(--dark-cyan);
     --bs-navbar-hover-color: var(--coral);
@@ -62,10 +66,5 @@ div.navbar-nav a {
 h1{
     font-size: 3rem;
     font-family: title;
-    color: var(--dark-cyan);
-}
-
-p{
-    font-family: regular;
     color: var(--dark-cyan);
 }
