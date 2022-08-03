@@ -7,10 +7,12 @@ body{
     font-family: regular;
     color: var(--dark-cyan);
 }
+
 .navbar {
     --bs-navbar-color: var(--dark-cyan);
-    --bs-navbar-hover-color: var(--coral);
     --bs-navbar-brand-color: var(--dark-cyan);
+    --bs-navbar-hover-color: var(--coral);
+    --bs-navbar-brand-hover-color: var(--coral);
     --bs-navbar-active-color: var(--coral);
 }
 
@@ -19,8 +21,6 @@ body{
     white-space: nowrap;
     flex-direction: row;
     column-gap: 20px;
-    font-family: regular;
-    font-size: 1.2rem;
 }
 
 .navbar-nav .nav-link.active {
@@ -32,6 +32,7 @@ div.navbar-nav a {
     text-align: center;
     border-radius: 2em;
     padding-inline: 1em;
+    font-size: 1.2rem;
 }
 
 #menu {
@@ -66,5 +67,4 @@ div.navbar-nav a {
 h1{
     font-size: 3rem;
     font-family: title;
-    color: var(--dark-cyan);
 }
