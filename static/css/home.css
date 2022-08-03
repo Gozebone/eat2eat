@@ -45,6 +45,11 @@ div.scrollable a {
     width: 320px;
 }
 
+@font-face {
+            font-family: monologue;
+            src: url("/static/fonts/MonologueRounded.otf") format("otf");
+}
+
 h2{
     font-family: monologue;
 }
