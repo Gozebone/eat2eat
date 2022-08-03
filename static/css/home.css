@@ -1,41 +1,8 @@
-:root{
-    --dark-cyan: #285252;
-    --coral: #fd7441;
-}
-
-body{
-    font-family: regular;
-    color: var(--dark-cyan);
-}
-
-.navbar {
-    --bs-navbar-color: var(--dark-cyan);
-    --bs-navbar-brand-color: var(--dark-cyan);
-    --bs-navbar-hover-color: var(--coral);
-    --bs-navbar-brand-hover-color: var(--coral);
-    --bs-navbar-active-color: white;
-}
-
 .scrollable {
     overflow: auto;
     white-space: nowrap;
     flex-direction: row;
-}
-
-.navbar-expand-lg .navbar-collapse, .scrollable{
     column-gap: 20px;
-}
-
-.navbar-nav .nav-link.active {
-    background-color: var(--coral);
-}
-
-.navbar .navbar-nav .nav-link {
-    text-align: center;
-    border-radius: 2em;
-    padding: 0.3em;
-    padding-inline: 1em;
-    font-size: 1.2rem;
 }
 
 #menu {

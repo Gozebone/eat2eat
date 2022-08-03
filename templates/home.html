@@ -3,16 +3,6 @@
 
 {% block custom_head %}
     {% load static %}
-    <style>
-        @font-face {
-            font-family: title;
-            src: url("{% static 'fonts/MonologueRounded.otf' %}") format("opentype");
-        }
-        @font-face {
-            font-family: regular;
-            src: url("{% static 'fonts/RopaSoft.otf' %}") format("opentype");
-        }
-    </style>
     <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
     <title>Меню</title>
 {% endblock custom_head %}
